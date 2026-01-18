@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>🚀 สถานีวัดคุณภาพอากาศIoT</h1>
+    <h1>🚀 สถานีวัดคุณภาพอากาศ IoT</h1>
     
     <div class="section-title">🌤️ สภาพอากาศ</div>
     <div class="container">
@@ -28,27 +28,34 @@
         </div>
     </div>
 
-    <div class="section-title">🚧 ฝุ่นละอองpm 🚧</div>
+    <div class="section-title">🚧 ฝุ่นละออง PM 🚧</div>
     <div class="container">
         <div class="card">
             <div class="label">PM 1.0</div>
-            <div class="val pm-val" id="pm1">รอAPI...</div>
+            <div class="val pm-val" id="pm1">รอ API...</div>
             <div class="unit">µg/m³</div>
         </div>
         <div class="card">
             <div class="label">PM 2.5</div>
-            <div class="val pm-val" id="pm25">รอAPI...</div>
+            <div class="val pm-val" id="pm25">รอ API...</div>
             <div class="unit">µg/m³</div>
         </div>
         <div class="card">
             <div class="label">PM 10</div>
-            <div class="val pm-val" id="pm10">รอAPI...</div>
+            <div class="val pm-val" id="pm10">รอ API...</div>
             <div class="unit">µg/m³</div>
         </div>
     </div>
 
+    <div class="download-container">
+        <a href="{{ url_for('static', filename='air-station.apk') }}" class="btn-download">
+            ⬇️ ดาวน์โหลดแอป Android (.APK)
+        </a>
+        <span class="version-text">สำหรับติดตั้งบนมือถือ Android</span>
+    </div>
+
     <div class="footer">
-        Station Info: <span id="v">รอAPI...</span> BY PingkungXD
+        Station Info: <span id="v">รอ API...</span> BY PingkungXD
     </div>
 
     <script src="{{ url_for('static', filename='script.js') }}"></script>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My IoT Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>🚀 IoT Air Station</h1>
+    
+    <div class="section-title">🌤️ Weather Conditions</div>
+    <div class="container">
+        <div class="card">
+            <div class="label">Temperature</div>
+            <div class="val" id="t">--</div>
+            <div class="unit">°C</div>
+        </div>
+        <div class="card">
+            <div class="label">Humidity</div>
+            <div class="val" id="h">--</div>
+            <div class="unit">%</div>
+        </div>
+        <div class="card">
+            <div class="label">Pressure</div>
+            <div class="val" id="p">--</div>
+            <div class="unit">hPa</div>
+        </div>
+    </div>
+
+    <div class="section-title">🚧 Air Quality (Waiting for Sensor) 🚧</div>
+    <div class="container">
+        <div class="card">
+            <div class="label">PM 1.0</div>
+            <div class="val pm-val" id="pm1">Wait...</div>
+            <div class="unit">µg/m³</div>
+        </div>
+        <div class="card">
+            <div class="label">PM 2.5</div>
+            <div class="val pm-val" id="pm25">Wait...</div>
+            <div class="unit">µg/m³</div>
+        </div>
+        <div class="card">
+            <div class="label">PM 10</div>
+            <div class="val pm-val" id="pm10">Wait...</div>
+            <div class="unit">µg/m³</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Station Info: <span id="v">Loading...</span>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

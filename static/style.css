@@ -1,0 +1,66 @@
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    text-align: center; 
+    background: #1a1a1a; 
+    color: white; 
+    padding: 20px; 
+    margin: 0; 
+}
+
+.container { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 15px; 
+    margin-bottom: 30px; 
+}
+
+.card { 
+    background: #2d2d2d; 
+    padding: 20px; 
+    border-radius: 15px; 
+    width: 150px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5); 
+}
+
+h1 { 
+    color: #00e5ff; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    margin-bottom: 5px; 
+}
+
+.section-title { 
+    color: #f39c12; 
+    font-size: 1.2em; 
+    margin-top: 30px; 
+    margin-bottom: 15px; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    border-bottom: 1px solid #444; 
+    display: inline-block; 
+    padding-bottom: 5px;
+}
+
+.label { font-size: 0.9em; color: #bbb; margin-bottom: 5px; }
+.val { font-size: 2em; font-weight: bold; color: #fff; }
+.unit { font-size: 0.9em; color: #666; }
+
+/* สีแยกตามค่า */
+#t { color: #ff5e57; } 
+#h { color: #00d2d3; } 
+#p { color: #1dd1a1; }
+
+/* สีโซนฝุ่น */
+.pm-val { color: #a29bfe; } 
+
+.footer {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #252525;
+    border-radius: 20px;
+    display: inline-block;
+    border: 1px solid #333;
+    font-size: 0.8em;
+    color: #777;
+}
